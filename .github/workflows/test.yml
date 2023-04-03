@@ -1,0 +1,12 @@
+name: Run workflow
+
+on:
+  repository_dispatch:
+    types: [run-workflow]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: run automation
+      run: echo "Test automation started bro!!!!!!!!"
